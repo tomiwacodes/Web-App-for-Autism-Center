@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="icon" href="icon.png">
+  <title>Ways to Help</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+<body>
+  <header class="navbars">
+    <div class="headings">
+      Oman Autism & Rehabilitation Center
+    </div>
+    <div class="autism">
+      <a href="{% url 'home' %}"><img id="OmanAutism" src="{% static 'images/OmanAutismLogo.png' %}"></a>
+    </div>
+    <ul class="navlinks">
+    <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+      <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+      <li class="News"><a href="{% url 'news' %}">News</a></li>
+      <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+      <li class="About"><a href="{% url 'about' %}">About</a></li>
+      
+    </ul>
+  </header>
+  <main class="main">
+    <div class="topspace"></div>
+    <div class="container">
+      <div class="row">
+        <div data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="linear">
+        <center>
+        <h1 style="color: #C6B149;">Helping People with Autism Spectrum Disorder (ASD)</h1>
+          <p>
+            ASD is a complex neurodevelopmental disorder that affects communication and behavior. It is a spectrum disorder, which means that it can present in a variety of ways and can range from mild to severe. People with ASD may experience difficulties with social interactions, repetitive behaviors, and sensory processing.
+          </p>
+          <p>
+            If you want to help someone with ASD, here are a few things you can do:
+          </p>
+        </center>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="linear" class="aboutcolumn">
+          <ul>
+            <li>
+              <h2 style="color: #EB914D;">Be patient and understanding</h2>
+              <p>
+                People with ASD may communicate or process information differently, and it can take them longer to understand or respond to situations. It is important to be patient and understanding when interacting with them.
+              </p>
+            </li>
+            <li>
+              <h2 style="color: #6FB963;">Offer support and encouragement</h2>
+              <p>People with ASD may need additional support and encouragement to participate in activities or try new things. Offer your support and encouragement to help them feel confident and capable.</p>
+            </li>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="linear" class="aboutcolumn">
+          <ul>
+            <li>
+              <h2 style="color: #6FB963;">Learn more about ASD</h2>
+              <p>
+                There is a wealth of information available online and in books about ASD and how it can affect people. Take the time to learn about the disorder and how it may impact the individual you are trying to help.
+              </p>
+            </li>
+            <li>
+              <h2 style="color: #EB914D; padding-top: 30px;">Be a good listener</h2>
+              <p>
+                People with ASD may have a hard time expressing themselves, so it is important to listen carefully and try to understand their perspective.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="1800" data-aos-easing="linear" style="margin-bottom: 5vh;">
+          <center>
+          <ul>
+          <li>
+              <h1 style="color: #C6B149;">Respect their boundaries</h1>
+              <p>People with ASD may have sensory sensitivities or may need extra space and time to process information. It is important to respect their boundaries and to ask for permission before touching or engaging with them in any way.</p>
+            </li>
+          </ul>
+              <p>By following these guidelines, you can help create a supportive and understanding environment for people with ASD.</p>
+        </center></div>
+      </div>
+    </div>
+  </main>
+  
+    <footer class="footer" style="width: 100%;">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+
+    <!------ JavaScript for Scrolling Animations --------->
+
+<script>
+    AOS.init();
+</script>
+
+  
+</body>
+</html>

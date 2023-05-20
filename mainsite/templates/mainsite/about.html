@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+  <link rel="icon" href="icon.png">
+  <title>About</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+<body>
+  <header class="navbars">
+    <div class="headings">
+      Oman Autism & Rehabilitation Center
+    </div>
+    <div class="autism">
+      <a href="{% url 'home' %}"><img id="OmanAutism" src = "{% static 'images/OmanAutismLogo.png' %}"></a>
+    </div>
+    <ul class="navlinks">
+      <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+      <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+      <li class="News"><a href="{% url 'news' %}">News</a></li>
+      <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+      <li class="About"><a href="{% url 'about' %}">About</a></li>
+    </ul>
+  </header>
+ <main class="main">
+  <div class="topspace"></div>
+  <div class="container">
+    <div class="row">
+      <div class="aboutbanner">
+        <center>
+          <h1 style="color: #6FB963; margin-top: -10px;">ABOUT US:</h1>
+          <p>Autism is not a disability, it is a different ability.</p>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="abtcolumn" data-aos="fade-up" data-aos-duration="1800" data-aos-easing="linear">
+        <ul>
+          <li>
+            <h2>OUR MISSION:</h2>
+            <img src="{% static 'images/aboutlines.png' %}" alt = "About Lines">
+            <p>
+              As the first Autism Rehabilitation Center in the Sultanate, our goal is to provide accessible behavioral treatment, therapy, and counseling for those with Autism Spectrum Disorder (ASD) in our community. Additionally, we hope to educate families on detecting early signs of ASD in their children so rehabilitation can start as early as possible.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="abtcolumn" data-aos="fade-up" data-aos-duration="1800" data-aos-easing="linear">
+        <ul>
+          <li>
+            <h2>OUR BACKGROUND:</h2>
+            <img src="{% static 'images/aboutlines.png' %}" alt = "About Lines">
+            <p>
+              Located in Muscat al Quaram, the Autism and Rehabilitation Center officially opened in 2015. Since then, the center has expanded to include 41 administrative staff members and several programs dedicated to improving the wellbeing of those diagnosed with ASD.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="abtcolumn" data-aos="fade-up" data-aos-duration="1800" data-aos-easing="linear">
+        <ul>
+          <li>
+            <h2>OUR SERVICES:</h2>
+            <img src="{% static 'images/aboutlines.png' %}" alt = "About Lines">
+            <p>
+              Currently, our services include special education, occupational therapy, speech therapy, psychological counseling and behavior modification. With these programs, we hope to work on the difficulties faced by children with ASD and provide them with the skills needed to lead an independent life in various fields.
+            </p>
+          </li>
+          <li>
+            <div class="contact" data-aos="fade-up" data-aos-duration="1800" data-aos-easing="linear">
+              <h1>MEET OUR TEAM</h1>
+            </div>
+            <ul class="contactlist">
+              <li><img src="{% static 'images/orlist.png' %}">DIRECTORS</li>
+              <li><img src="{% static 'images/orlist.png' %}">EDUCATORS</li>
+              <li><img src="{% static 'images/orlist.png' %}">SECRETARY</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
+  
+    <footer class="footer" style="width: 100%;">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+
+  <!------ JavaScript for Scrolling Animations --------->
+
+<script>
+    AOS.init();
+</script>
+
+  
+</body>
+
+</html>

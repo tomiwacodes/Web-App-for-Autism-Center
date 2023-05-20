@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="icon.png">
+  <title>News</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+</head>
+<body>  
+  <Header class="navbars">
+    <div class="headings">
+      Oman Autism & Rehabilitation Center
+    </div>
+    <div class="autism">
+      <a href="{% url 'home' %}"><img id="OmanAutism" src="{% static 'images/OmanAutismLogo.png' %}"></a>
+    </div>
+    <ul class="navlinks">
+        <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+      <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+      <li class="News"><a href="{% url 'news' %}">News</a></li>
+      <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+      <li class="About"><a href="{% url 'about' %}">About</a></li>
+    </ul>
+  </Header>
+  
+  <main class="main">
+    <div class="topspace"></div>
+    <div class="container">
+      <h1 class="newsmain">CURRENT RESEARCH:</h1>
+      <img class="lines" src="{% static 'images/aboutlines.png' %}">
+      <div class="row">
+          <div class="newscolumn">
+            <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="linear" class="article">
+            <a target="_blank" href="https://jpmm.um.edu.my/index.php/jummec/article/view/41053/15359">
+              <div class="title">
+                <h1>CURRENT TREND AND RECENT DEVELOPMENT OF AUTISM SPECTRUM DISORDER (ASD) <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>PUBLISHED: 2022-12-31</h3>
+                  <div>
+                    <p>This  review  aims  to disseminate knowledge and provide  updates  on  ASD, highlight  the challenges  in  ASD detection screening  techniques, and discuss the possible risks of developing ASD.</p>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://link.springer.com/article/10.1007/s40489-021-00273-8">
+              <div class="title">
+                <h1>A Review of Research Studying Film and Television Representations of ASD <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>PUBLISHED: 2021-06-21</h3>
+                  <div>
+                    <p>This review examines the current state of research focused on ASD representations in film and television, and the extent to which characterizations of ASD have been studied.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://www.nature.com/articles/s41430-021-01027-9">
+              <div class="title">
+                <h1>Pre- and probiotics in the management of children with autism and gut issues <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>PUBLISHED: 2021-10-21</h3>
+                  <div>
+                    <p>This review investigates the gut microbiome as a therapeutic target for children with ASD and examines evidence for the utility of prebiotics, probiotics or synbiotics (i.e., prebiotic + probiotic) among this cohort.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <h1 class="newsmain">OMANI NEWS:</h1>
+      <img class="lines" src="{% static 'images/aboutlines.png' %}">
+      <div class="row">
+          <div class="newscolumn">
+          <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="linear"class="article">
+           <a target="_blank" href="https://www.spectrumnews.org/news/analysis-offers-first-reliable-estimate-of-prevalence-in-oman/">
+              <div class="title">
+                <h1>ASD Analysis offers first reliable estimate of prevalence in Oman <img src="{% static 'images/puzzle.png' %}"></h1> 
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2020-02-03</h3>
+                  <div>
+                    <p>A new study has found that 0.2 percent of children in Oman are on the autism spectrum. This estimate is about 15 times higher than a 2011 finding, the only other study of autism prevalence in the country</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://www.thearabianstories.com/2022/12/12/shura-council-discusses-education-services-for-children-with-autism-in-oman/">
+              <div class="title">
+                <h1>Shura Council discusses educational services for children with ASD in Oman <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2022-12-12</h3>
+                  <div>
+                    <p>The Education and Scientific Research Committee of the Shura Council discussed autism education services.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6930034/">
+              <div class="title">
+                <h1>Revisiting the Prevalence of Autism Spectrum Disorder among Omani Children <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2019-12-22</h3>
+                  <div>
+                    <p>This study, conducted from December 2011 to December 2018, aimed to provide an updated estimate of the prevalence of autism spectrum disorder (ASD) among Omani children.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <h1 class="newsmain">INTERNATIONAL NEWS:</h1>
+      <img class="lines" src="{% static 'images/aboutlines.png' %}">
+      <div  style="margin-bottom: 5vh;" class="row">
+          <div class="newscolumn">
+          <div data-aos="fade-up-right" data-aos-duration="1000" data-aos-easing="linear" class="article">
+            <a target="_blank" href="https://finance.yahoo.com/news/autism-spectrum-disorder-treatment-global-120800780.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANOui4t9UO-NUtPHobmJ-NwWHkNwKSEG0mHX62N8b4Wpjfv0c7x4bXs6xzsH83hL2rJqhIew1RqjNxOqFJL1Kr86cLloCUgsbBDT1uGsl1OB37cc_9U5-fC4Inz62su-5WBOKbohQ8TW5tVyF5U8csAvkAEPW_9YB-MXxNGh4hXC">
+              <div class="title">
+                <h1>Autism Spectrum Disorder Treatment Global Market Report 2022 growth report <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2022-12-29</h3>
+                  <div>
+                    <p>The autism spectrum disorder treatment market size is estimated to be USD 2,453.2 million in 2022 and is expected to witness a CAGR of 6.47% during the forecast period 2023-2033.</p>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://www.businesswire.com/news/home/20221205005372/en/Therapeutic-Solutions-International-Announces-Improvements-in-Autism-Amyotrophic-Lateral-Sclerosis-and-Schizophrenia-Cases-Treated-by-Veltmeyer-Institute-for-Advanced-Therapeutics">
+              <div class="title">
+                <h1>Therapeutic Solutions International Announces Improvements in Autism <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2022-12-05</h3>
+                  <div>
+                    <p>Therapeutic Solutions International announced preliminary results of a collaboration with the Veltmeyer Institute for Advanced Therapeutics aimed at providing patients with protocols, products and cells.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="newscolumn">
+            <div data-aos="fade-up-left" data-aos-duration="1000" data-aos-easing="linear" class="article">
+              <a target="_blank" href="https://www.wtsp.com/article/life/heartwarming/teen-autism-brings-cheer-tampa-international-airport-piano/67-a045630f-c313-4176-ad2f-e21a810e241f">
+              <div class="title">
+                <h1>Communicating through music: How a teen with autism brings cheer <img src="{% static 'images/puzzle.png' %}"></h1>
+              </div>
+              <div class="learnmore"><h1>LEARN MORE:</h1></div>
+              </a>
+              <div class="article1">
+                <h3>RELEASED: 2022-12-19</h3>
+                  <div>
+                    <p>A severe speech delay doesn't stop Milosz Gasior from making a cheerful impact. The teen is spending his weekends at the keyboard in TPA.</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+  <!------ JavaScript for Scrolling Animations --------->
+
+<script>
+    AOS.init();
+</script>
+
+  
+</body>
+
+</html>

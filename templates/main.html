@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/styl.css' %}" rel="stylesheet" type="text/css" />
+    <title>Autism Predictor</title>
+    
+</head>
+<body>
+    <h1 style="color: #00bf63; font-family: 'Poppins', sans-serif; text-align: center;">Autism Spectrum Disorder:</h1>
+    <h2 style = "color: #ff914d; font-family: 'Poppins', sans-serif; text-align: center;">Behavioral Prediction Model</h2>
+    <hr style="color: #a6c3d4">
+    <p style="text-align: center;">Although this model should not be used to diagnose ASD, it<br> 
+        can be used to identify relationships between a<br>
+        respondent's behaviors and characteristics and common <br>
+        behaviors and characteristics found in individuals with ASD</p>
+    {% if result %}
+        <h1>{{result}}</h1>
+    {% endif %}
+    <hr style="color: #a6c3d4">
+    <form action = "" method = "POST" >
+        {% csrf_token %}
+        <div class = "question1">
+        Does your child use simple gestures?(Sometimes, Rarely, Never, Often, Always) </div> 
+        <input type = "text" name = "Question9" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br >
+        <div class = "question2">
+        If you or someone else in the family is visibly upset, does the child show signs of wanting to comfort them(Sometimes, Rarely, Never, Often, Always)</div>  
+        <input type = "text" name = "Question7" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question1">
+        How easy is it for you to get eye contact with the child?(Sometimes, Rarely, Never, Often, Always) </div> 
+        <input type = "text" name = "Question2" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question2">
+        How often does the child speak?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question8" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question1">
+        Does the child point to indicate they want something?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question3" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question2">
+        Does the child pretend?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question5" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question1">
+        Does the child follow where you are looking?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question6" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question2">
+        Does the child look at you when you call their name?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question1" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = question1>
+        How old is the child in months?</div>  
+        <input type = "number" name = "Age_in_months" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question2">
+        Does the child stare at nothing for no reason?(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question10" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question1">
+        Does your child point to show interest? e.g. pointing at interesting view(Sometimes, Rarely, Never, Often, Always)</div> 
+        <input type = "text" name = "Question4" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question2">
+        Does the child have Jaundice?(Yes or No)</div>
+        <input type = "text" name = "Jaundice" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required ><br>
+        <div class = "question1">
+        Is the child Asian?(Yes or No)</div>  
+        <input type = "text" name = "Asian" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question2">
+        Is the person who completed this test a family member?(Yes or No)</div> 
+        <input type = "text" name = "Family_Member" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question1">
+        Is the child Latino?(Yes or No)</div>  
+        <input type = "text" name = "Latino" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question2">
+        Is the child Middle Eastern?(Yes or No)</div>  
+        <input type = "text" name = "Middle_Eastern" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question1">
+        Is the child a Male?(Yes or No)</div>  
+        <input type = "text" name = "Sex" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question2">
+        Is the child South Asian?(Yes or No)</div> 
+        <input type = "text" name = "SouthAsian" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question1">
+        Is the child Hispanic?(Yes or No)</div>  
+        <input type = "text"name = "Hispanic" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <div class = "question2">
+        Does a family member have autism?(Yes or No)</div>
+        <input type = "text"  name = "Family" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
+        <input type = "submit" style = "background-color: #0f468f; text-transform: uppercase; border-radius: 27px; width: 100px; color: white; margin: 0 auto; display: flex; justify-content: center;">
+    </form>
+    {% if result %}
+        <h1 style ="background-color: #00bf63; font-family: 'Poppins', sans-serif;;">{{result}}</h1>
+    {% endif %}
+</body>
+</html>

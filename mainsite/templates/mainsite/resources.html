@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="icon.png">
+  <title>Resources</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+ 
+
+</head>
+<body>  
+
+  <Header class="navbars">
+    <div class="headings">
+      Oman Autism & Rehabilitation Center
+    </div>
+    <div class="autism">
+      <a href="{% url 'home' %}"><img id="OmanAutism" src="{% static 'images/OmanAutismLogo.png' %}"></a>
+    </div>
+    <ul class="navlinks">
+        <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+        <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+        <li class="News"><a href="{% url 'news' %}">News</a></li>
+        <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+        <li class="About"><a href="{% url 'about' %}">About</a></li>
+    </ul>
+  </Header>
+
+  <main class="main">
+    <div class="topspace"></div>
+    <div class="container">
+      <div class="row">
+        <div data-aos="fade-right" class="resourcescolumn">
+          <h1 style="color: #EB914D;">LOCAL RESOURCES</h1>
+          <p>The following are local resources for individuals with autism spectrum disorder (ASD) and their families in the XXX area:</p>
+          <ul>
+            <li>XXX Autism Support Group: A support group for individuals with ASD and their families, offering resources, information, and support.</li>
+            <li>XXX Disability Services: A government agency providing resources and support for individuals with disabilities, including ASD.</li>
+            <li>XXX Children's Hospital: A hospital offering specialized medical care for children with ASD and other disabilities.</li>
+          </ul>
+        </div>
+        <div data-aos="fade-left" class="resourcescolumn">
+          <h1 style="color: #B6C6E9;">ONLINE RESOURCES</h1>
+          <p>The following are online resources for individuals with ASD and their families:</p>
+          <ul>
+            <li class="links"><a href="https://www.autismspeaks.org/">Autism Speaks</a>: A national advocacy and support organization for individuals with ASD and their families.</li>
+            <li><a href="https://www.autism.org.uk/">The National Autistic Society</a>: A UK-based organization providing resources and support for individuals with ASD and their families.</li>
+            <li><a href="https://www.autism.net/">Autism Network International</a>: A network of individuals with ASD and their allies, promoting self-advocacy and support for the ASD community.</li>
+          </ul>
+        </div>
+
+        <div data-aos="fade-right" style="padding-bottom: 40px;" class="resourcescolumn">
+          <h1 style="color: #214A89;">EDUCATIONAL RESOURCES</h1>
+          <p>The following are educational resources for individuals with ASD and their families:</p>
+          <ul>
+            <li><a href="https://www.teacch.com/">TEACCH (Treatment and Education of Autistic and Related Communication Handicapped Children)</a>: A program providing educational resources and support for individuals with ASD and their families.</li>
+            <li><a href="https://www.pbis.org/">Positive Behavioral Interventions and Supports (PBIS)</a>: A program providing resources and support for the implementation of positive behavior interventions in educational settings for individuals with ASD and other disabilities.</li>
+            <li><a href="https://www.councilforexceptionalchildren.org/">Council for Exceptional Children</a>: A professional organization for special education professionals, providing resources and support for individuals with ASD and other disabilities.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!------ JavaScript for Scrolling Animations --------->
+
+<script>
+    AOS.init();
+</script>
+
+  
+</body>
+
+</html>

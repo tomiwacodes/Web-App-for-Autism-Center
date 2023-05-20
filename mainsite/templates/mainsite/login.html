@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="icon.png">
+  <title>Login</title>
+  <link href="{% static 'css/style2.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>  
+    <Header class="navbars">
+        <div class="headings">
+            Oman Autism & Rehabilitation Center
+        </div>
+        <div class="autism">
+            <a href="{% url 'home' %}"><img id="OmanAutism" src="{% static images/OmanAutismLogo.png %}"></a>
+        </div>
+        <ul class="navlinks">
+            <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+            <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li class="News"><a href="{% url 'news' %}">News</a></li>
+            <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li class="About"><a href="{% url 'about' %}">About</a></li>
+            <li class="Login"><a href="{% url 'login' %}">Login</a></li>
+        </ul>
+       </Header>
+
+       <div class="login">
+
+        <form id="login-form" action="/login" method="post">
+            <!-- Add fields for the username and password -->
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Type your username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Type your password"><br><br>
+            <!-- Add a submit button to log in -->
+            <button type="submit">Log In</button>
+          </form> 
+       </div>
+
+
+       <!-- Add the footer -->
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+
+       
+    </body>
+</html>

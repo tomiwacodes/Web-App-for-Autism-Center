@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="{% static 'images/icon.png' %}">
+  <title>Frequently Asked Questions</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Scrolling animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+    
+</head>
+
+<body>
+  <Header class="navbars">
+    <div class="headings">
+      Oman Autism & Rehabilitation Center
+    </div>
+    <div class="autism">
+      <a href="{% url 'home' %}"><img id="OmanAutism" src="{% static 'images/OmanAutismLogo.png' %}"></a>
+
+    </div>
+    <ul class="navlinks">
+        <li class="Resources"><a href="{% url 'resources' %}">Resources</a></li>
+        <li class="FAQs"><a href="{% url 'faqs' %}">FAQs</a></li>
+        <li class="News"><a href="{% url 'news' %}">News</a></li>
+        <li class="waystohelp"><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+        <li class="About"><a href="{% url 'about' %}">About</a></li>
+    </ul>
+  </Header>
+
+  <main class="main">
+    <div class="topspace"></div>
+    <div class="container">
+      <!--Section: FAQ-->
+    <div><center>
+    <h1 style="color: #6FB963;">Frequently Asked Questions</h1>
+    </center></div>
+
+    <div class="row">
+      <div data-aos="flip-left" class="faqscolumn"">
+      <i class="far fa-paper-plane text-primary pe-2"></i><h3> What is Autism?</h3>
+        <p>
+          <strong>Autism Spectrum Disorder (ASD)</strong> is a neurological developmental disorder that can affect
+          learning, social abilities, and behavior. It is important to note that not all people diagnosed with ASD will be
+          affected in the same ways, which is why our facility offers a variety of programs and services.
+        </p>
+      </div>
+
+      <div data-aos="flip-left" class="faqscolumn">
+        <i class="fas fa-pen-alt text-primary pe-2"></i><h3> How is ASD diagnosed?</h3>
+        <p>
+          <strong>ASD</strong> is typically diagnosed by a team of professionals, including a pediatrician,
+          psychologist, and speech therapist. The process may involve developmental screenings, evaluations, and
+          assessments to determine if an individual meets the criteria for an autism diagnosis. A diagnosis of autism
+          can be made as early as 18 months of age, but it is more common to diagnose autism in children between the
+          ages of 2 and 3 years old.
+        </p>
+      </div>
+
+      <div data-aos="flip-left" class="faqscolumn">
+      <i class="fas fa-user text-primary pe-2"></i><h3> What are the signs of ASD?</h3>
+        <p>
+          People with ASD often have issues with social communication, interaction, and restricted or repetitive
+          behaviors or interests. People with ASD may also have different ways of learning, moving, or paying attention.
+          These characteristics can make life very challenging. It is important to note that some people without ASD
+          might also have some of these symptoms. </p>
+      </div>
+
+      <div data-aos="flip-left" class="faqscolumn">
+        <i class="fas fa-rocket text-primary pe-2"></i><h3> What can I do to prevent ASD?</h3>
+        <p>
+          There's no way to prevent ASD, but there are treatment options. Early diagnosis and
+          intervention is most helpful and can improve behavior, skills and language development. However, intervention
+          is helpful at any age.
+        </p>
+      </div>
+
+      <div data-aos="flip-left" class="faqscolumn">
+      <i class="fas fa-home text-primary pe-2"></i><h3> How can we diagnose ASD?</h3>
+        <p><strong>Diagnosing </strong>ASD can be difficult since there is no medical test, like a blood test, to
+          diagnose the disorder. Doctors look at the child’s behavior and development to make a diagnosis. ASD can
+          sometimes be detected at 18 months of age or younger. By age 2, a diagnosis by an experienced professional can
+          be considered reliable. However, many children do not receive a final diagnosis until they are much older.</p>
+      </div>
+
+      <div data-aos="flip-left" class="faqscolumn">
+  <i class="fas fa-book-open text-primary pe-2"></i><h3> Who is at high risk for
+          ASD?</h3>
+        <p>
+          Children born to older parents are at a higher risk for having autism. Parents who have a child with ASD have
+          a 2 to 18 percent chance of having a second child who is also affected. Studies have shown that among
+          identical twins, if one child has autism, the other will be affected about 36 to 95 percent of the time.
+        </p>
+      </div>
+    </div>
+      </div>
+  <!--Section: FAQ-->
+  </main>
+
+  <footer class="footer">
+    <div class="footercontainer">
+      <div class="row">
+        <div class="footercolumn">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="">Phone Number</li>
+            <li><a href="">Social Media 1</li>
+            <li><a href="">Social Media 2</li>
+            <li><a href="">Social Media 3</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="">Facebook</li>
+            <li><a href="">Twitter</li>
+            <li><a href="">Instagram</li>
+            <li><a href="">LinkedIn</li>
+          </ul>
+        </div>
+
+        <div class="footercolumn">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="{% url 'resources' %}">Resources</a></li>
+            <li><a href="{% url 'faqs' %}">FAQs</a></li>
+            <li><a href="{% url 'news' %}">News</a></li>
+            <li><a href="{% url 'waystohelp' %}">Ways To Help</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Copyright 2023 Oman Autism and Rehabilitation Center</p>
+      </div>
+    </div>
+  </footer>
+  <!------ JavaScript for Scrolling Animations --------->
+
+<script>
+    AOS.init();
+</script>
+
+  
+</body>
+
+</html>
