@@ -17,9 +17,11 @@
         can be used to identify relationships between a<br>
         respondent's behaviors and characteristics and common <br>
         behaviors and characteristics found in individuals with ASD</p>
-    {% if result %}
-        <h1>{{result}}</h1>
-    {% endif %}
+    <div class = "result">
+        {% if result %}
+            <h1 style = "margin-left: auto; margin-right: auto; text-align: center;">{{result}}</h1>
+        {% endif %}
+    </div>
     <hr style="color: #a6c3d4">
     <form action = "" method = "POST" >
         {% csrf_token %}
@@ -85,8 +87,5 @@
         <input type = "text"  name = "Family" style = "margin: 0 auto; display: block; background-color: #d9d9d9; border-color: #a6c3d4;"required><br>
         <input type = "submit" style = "background-color: #0f468f; text-transform: uppercase; border-radius: 27px; width: 100px; color: white; margin: 0 auto; display: flex; justify-content: center;">
     </form>
-    {% if result %}
-        <h1 style ="background-color: #00bf63; font-family: 'Poppins', sans-serif;;">{{result}}</h1>
-    {% endif %}
 </body>
 </html>
